@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*assets */
+
+.btn{
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: rgb(202, 192, 192);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* header  */
+.header{
+    position: relative;
+    min-height: 55vh;
+    background-image: url(./bg-img.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainContain{
+    position: absolute;
+    min-width:80%;
+    min-height: 35vh;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.headline{
+    text-align: center;
+    color:rgb(33, 0, 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.headline h1{
+    
+    text-shadow: 2px 4px blanchedalmond;
+
+}
+.searchEngine{
+    display:flex;
+    justify-content:space-between;
+    text-align: center;
+    width:80%;
+    height: 8vh;
+    margin:0 7.5rem;
+    margin-top: 3.5rem; 
+}
+.searchEngine [type="search"]{
+    border: 2px solid black;
+    width:75%;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.searchEngine [type="submit"]{
+    border: 2px solid black;
+    width:20%;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* main body section */
+
+.section1{
+    /* border: 2px solid red; */
+    min-height: 45vh;
+
+
+}
+.mainSection{
+    border: 3px solid black;
+    margin: 0% 10%;
+    min-width:80%;
+    height: 10%;
+    display:flex;
+    justify-content: space-between;
+    margin-top:  1.5rem;
+}
+.mainDetail{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    min-width:90%;
+    display:flex;
+    
+}
+.mainImage{
+    /* border: 2px solid green; */
+    padding:0.5rem;;
+}
+.mainImage img{
+    height:55px;
+    width:100px;
+}
+.mainName{
+    /* border: 2px solid black; */
+    min-width:65%;
+    /* margin-left: 1rem; */
+}
+.mainName h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left:0.5rem;
+    min-width: 25vw;
+}
+.mainName h4{
+    /* border: 2px solid black; */
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    margin: .5rem;
+}
+.mainFav{
+    position: relative;
+    /* border:1px solid black; */
+    margin-left: 2%;
+    min-width:15%;
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    justify-content:space-between;
+}
+.mainFav h3{
+    /* border: 1px solid red; */
+    display:inline-block;
+    font-size: 3vw;
+    color: red;
+}
+.mainFav h3 span{
+    color: black;
+    font-size: 2rem;
+}
+.mainMore{
+    border-left: 3px solid black;
+    min-width: 10%;
+    position: relative;
+}
+.mainMore a{
+    /* border:2px solid red; */
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    background-color:white;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*    media query for 1000px width */
+
+@media (max-width: 1000px){
+    .mainFav h3 span{
+        font-size: 1.5rem;
+    }
+    .mainMore a{
+        font-size: 1rem;
+    }
+}
+
+/*    media query for 850px width */
+
+@media (max-width: 850px){
+    .searchEngine{
+        margin: 0 10%;
+        margin-top: 3rem;
+    }
+    .searchEngine [type="submit"]{
+        font-size: 1.2rem; 
+
+    }
+    .mainName{
+        min-width: 50%;
+    }
+    .mainFav{
+        min-width: 10%;
+    }
+    .mainFav h3 span{
+        font-size: 1.5rem;
+    }
+    .mainMore a{
+        font-size: .8rem;
+    }
+
+}
+/*    media query for 850px width */
+
+@media(max-width:600px){
+    .header{
+        min-height: 40vh;
+    }
+    .headline h1{
+        font-size: 2.2rem;
+    }
+    .searchEngine{
+        margin:1rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .searchEngine [type="search"]{
+        font-size: 1.5rem;
+        min-width:70vw;
+        margin-bottom:0.5rem;
+        min-height:6vh;
+    }
+    .searchEngine [type="submit"]{
+        font-size: 1rem;
+        min-height:5vh;
+        min-width:40vw;   
+    }
+
+    .mainSection{
+        width: 80%;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+    }
+    .mainDetail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainName{
+        margin:1rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .mainFav h3 ,
+    .mainFav h3 span{
+        font-size: 1.5rem;
+    }
+    .mainMore a{
+        font-size: 1.5rem;
+    }
+}

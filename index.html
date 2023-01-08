@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="header">
+        <div class="mainContain">
+            <div class="headline">
+                <h1>Search Anime Characters</h1>
+            </div>
+            <form class="searchEngine" id="searchEngine">
+                <input type="search" placeholder="&nbsp;&nbsp;Search Anime" class="search" id="search" />
+                <input type="submit" value="search" class="btn search-btn" id="searchBtn" />
+            </form>
+        </div>
+    </header>
+    <!-- main body section -->
+    <main>
+        <section class="section1" id="resultSection">
+            <div class="mainSection">
+                <div class="mainDetail">
+                    <div class="mainImage" id="mainImage">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyHcW7u4cx4zhzkpO0QXE14pWogUlW9dv6jg&usqp=CAU" alt="image" id="image" />
+                    </div>
+                    <div class="mainName" id="mainName">
+                        <h3 id="name">anime name</h3>
+                        <h4 id="nickName">Nick name</h4>
+                    </div>
+                    <div class="mainFav">
+                        <h3>&hearts;</h3>
+                        <h3><span>likes</span></h3>
+                    </div>
+                </div>
+                <div class="mainMore" id="mainMore">
+                    <a href="${element.url}" target="_blank">MORE</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
